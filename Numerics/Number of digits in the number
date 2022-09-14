@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int num,count=0;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    int ref=num;
+    while(num!=0){
+        count++;
+        num=num/10;
+    }
+    printf("%Number of digits in %d is %d",ref,count);
+
+    return 0;
+}
+
+
+OUTPUT:
+  Enter the value of num:342543
+  Number of digits in 342543 is 6
